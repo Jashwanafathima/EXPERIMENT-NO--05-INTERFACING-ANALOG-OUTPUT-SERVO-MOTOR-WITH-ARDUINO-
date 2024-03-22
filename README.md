@@ -1,11 +1,14 @@
-###  DATE: 
-
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT: 
-
-
 # EXPERIMENT NO 05 INTERFACING ANALOG OUTPUT SERVO MOTOR WITH ARDUINO
+
+###  DATE: 22.03.24
+
+###  NAME: JASHWANA FATHIMA S
+
+###  ROLL NO : 212222040059
+
+###  DEPARTMENT: CSE
+
+
 
 ### AIM
 To interface an Analog output (servo motor) and modify the angular displacement of the servo using PWM signal .
@@ -60,7 +63,12 @@ CIRCUIT DIAGRAM
  ![image](https://user-images.githubusercontent.com/36288975/163544618-6eb8a7b5-7f1a-428a-8d9f-fd899b145efb.png)
 
 ### FIGURE 04 CIRCUIT DIAGRAM
+![Screenshot 2024-03-22 161620](https://github.com/Jashwanafathima/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/119560192/635dc05e-864c-42fe-9c11-6e4880567bee)
 
+### SCHEMATIC VIEW:
+![Screenshot 2024-03-22 161759](https://github.com/Jashwanafathima/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/119560192/43efabfa-597c-41ce-abd8-1b86bca245a9)
+
+### GRAPH:
 ### PROCEDURE:
 1.	Connect the circuit as per the circuit diagram 
 2.	Connect the board to your computer via the USB cable.
@@ -74,15 +82,50 @@ CIRCUIT DIAGRAM
 
 
 ### PROGRAM :
- 
+ ```
+#include<Servo.h>
+Servo sr1;
+int pos=0;
+int red=9;
+int green=8;
+void setup()
+{
+  sr1.attach(6);
+  Serial.begin(9600);
+  pinMode(red,OUTPUT);
+  pinMode(green,OUTPUT);
+}
 
-
-
-
-
-
-
-
-
+void loop()
+{
+  for(pos=0;pos<=180;pos+=5)
+  {
+    sr1.write(pos);
+    delay(1000);
+    Serial.println(pos);
+    if(pos>=120)
+  {
+    digitalWrite(red,HIGH);
+    delay(200);
+    digitalWrite(red,LOW);
+    delay(200);
+  }
+    
+  }
+  for(pos=180;pos>=0;pos-=5)
+  {
+    sr1.write(pos);
+    delay(1000);
+    Serial.println(pos);
+    if(pos<=120)
+  {
+    digitalWrite(green,HIGH);
+    delay(200);
+    digitalWrite(green,LOW);
+    delay(200);
+  }
+  } 
+}
+```
 ### RESULTS: 
 Arduino uno interfacing with servo motor is learned and angular position is controlled .
