@@ -59,8 +59,7 @@ An external controller (such as the Arduino) tells the servo where to go with a 
 
 CIRCUIT DIAGRAM
  
- 
- ![image](https://user-images.githubusercontent.com/36288975/163544618-6eb8a7b5-7f1a-428a-8d9f-fd899b145efb.png)
+![image](https://user-images.githubusercontent.com/36288975/163544618-6eb8a7b5-7f1a-428a-8d9f-fd899b145efb.png)
 
 ### FIGURE 04 CIRCUIT DIAGRAM
 ![Screenshot 2024-03-22 161620](https://github.com/Jashwanafathima/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/119560192/635dc05e-864c-42fe-9c11-6e4880567bee)
@@ -69,6 +68,9 @@ CIRCUIT DIAGRAM
 ![Screenshot 2024-03-22 161759](https://github.com/Jashwanafathima/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/119560192/43efabfa-597c-41ce-abd8-1b86bca245a9)
 
 ### GRAPH:
+
+![Screenshot 2024-03-22 162654](https://github.com/Jashwanafathima/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/119560192/ae2286e9-7167-4cf4-af4d-45159babd6d7)
+
 ### PROCEDURE:
 1.	Connect the circuit as per the circuit diagram 
 2.	Connect the board to your computer via the USB cable.
